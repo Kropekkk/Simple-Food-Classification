@@ -9,7 +9,7 @@ def train(model: torch.nn.Module,
           epochs: int,) -> Dict[str, List]:
 
   results = {"train_loss": [],
-      "train_acc": [],-
+      "train_acc": [],
       "test_loss": [],
       "test_acc": []
   }
