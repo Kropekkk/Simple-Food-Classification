@@ -13,12 +13,12 @@ def train(model: torch.nn.Module,
       "test_loss": [],
       "test_acc": []
   }
-
-  train_loss, train_acc = 0, 0
-  test_loss, test_acc = 0, 0
   
   for epoch in range(epochs):
     model.train()
+
+    train_loss, train_acc = 0, 0
+    test_loss, test_acc = 0, 0
 
     for batch, (X, y) in enumerate(train_dataloader):
       y_pred = model(X)
